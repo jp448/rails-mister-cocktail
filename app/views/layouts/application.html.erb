@@ -11,6 +11,12 @@
   </head>
 
   <body>
-    <%= yield %>
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1"><%= link_to "<i class='fas fa-glass-martini-alt'></i>".html_safe, cocktails_path%></span>
+    <span class="navbar-brand mb-0 h1"><%= link_to "<i class='fas fa-plus'></i>".html_safe, new_cocktail_path%></span>
+  </nav>
+    <div class= "container mt-5">
+      <%= yield %>
+    </div>
   </body>
 </html>
