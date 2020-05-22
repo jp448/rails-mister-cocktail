@@ -11,3 +11,55 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: #7b0d4d;
+}
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-pansy{
+  background-color: $pansy;
+  height: 400px;
+}
+
+.bg-plum{
+  background-color: $plum;
+  height: 400px;
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+}
+
+.b-color {
+  color: #F8B3F1;
+}
+
+.c-color {
+  color: #7B0D4D;
+}
+
+.pink-bg {
+  background-color: #f8b3f1;
+  width: 800px;
+  border-radius: 20px;
+}
+
+.form-control {
+  background-color: #f8b3f1 !important;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border-color: rgba(14, 33, 213, 0.5) !important;
+}
+
+.small {
+  font-size: 16px;
+}

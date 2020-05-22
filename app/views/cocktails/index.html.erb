@@ -1,8 +1,25 @@
-<h1><%= link_to 'Cocktails', cocktails_path %></h1>
-<ul>
-  <% @cocktails.each do |cocktail| %>
-  <li>
-    <%= link_to cocktail.name, cocktail %>
-  </li>
+<div class="banner" style="background-image: url(<%= image_path("cocktail_banner.jpg") %>);">
+</div>
+  <% @cocktails.each_with_index do |cocktail, index| %>
+    <div class="container-fluid px-0">
+      <div class="row">
+        <% if index % 2 == 0  %>
+            <div class="col d-flex flex-column justify-content-center align-items-center bg-pansy px-0">
+              <h2 class="title b-color"><%= link_to cocktail.name, cocktail %></h2>
+              <p class="b-color text-center px-2 mx-2">Cutty sark scots whisky van winkle family reserve zombie, springbank lime rickey, widow’s cork. Glen scotia redline godfather bowmore bull shot aberlour gummy and coke snowball aberfeldy harvey wallbanger. Oban four horsemen critty bo old rip van winkle negroni, bloody aztec, crown royal paradise champagne cocktail redline flaming volcano.</p>
+            </div>
+            <div class="col bg-plum px-0" style="background-image: url(<%= cocktail.image_url %>); background-size: cover; background-position: center;">
+            </div>
+          <% else  %>
+            <div class="col bg-pansy px-0" style="background-image: url(<%= cocktail.image_url %>); background-size: cover; background-position: center;">
+            </div>
+            <div class="col bg-plum d-flex flex-column justify-content-center align-items-center px-0">
+              <h2 class="title"><%= link_to cocktail.name, cocktail %></h2>
+              <p class="c-color text-center px-2 mx-2">Stinger chimayó cocktail lemon split brandy manhattan presbyterian, old rip van winkle calvert glenfarclas toro rojo. Smirnoff mai-tai long island iced tea. French 75 three wise men glengoyne, bacardi orgasm balvenie strathmill bunnahabhain el presidente, dailuaine house of lords mudslide blue blazer.</p>
+            </div>
+        <% end %>
+      </div>
+    </div>
   <% end %>
-</ul>
+
+
