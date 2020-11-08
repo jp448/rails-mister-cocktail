@@ -1,24 +1,27 @@
-# README
+# rails-mister-cocktail
+ Rails app where users can post cocktail recipes. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Introduction**
 
-Things you may want to cover:
+This app was created during the Le Wagon bootcamp. It is built with Ruby on Rails using a postgres database. The frontend uses the bootstrap framework and Sass. 
 
-* Ruby version
+**Demo**
 
-* System dependencies
+[Mr. Cocktail](https://mr-cocktail.proctor-webworks.com/)
 
-* Configuration
+**App Features**
+* stylish design
+* 3 model app
+* interactive 
+* MVC design pattern
 
-* Database creation
+**App Structure**
+Rails Mr. Cocktail is a three model rails app. There is a cocktail model, a doses model, and an ingredient model. The doses model has a many to many relationship to both cocktails and ingredients. Users can choose to view cocktails already added to the homepage. A user can edit a cocktail (name, ingredients, etc) or delete a cocktail. A user can add a cocktail, a picture, and the correct doses of ingredients to the cocktail's page. Once a cocktail has been added it is also added on the homepage. 
 
-* Database initialization
+**App Improvements**
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If I had more time here are the improvements I would make to the app: 
+* Make the design responsive
+* Add a user photo upload option
+* Add a search bar
+* Make pages more dynamic with more use of JS plugins (for example animate on scroll)
