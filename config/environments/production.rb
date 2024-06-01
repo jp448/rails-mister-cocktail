@@ -7,7 +7,7 @@ Rails.application.configure do
   # Allow requests from these domains and their subdomains
   config.hosts << "cocktail.captain.sudete.de"
   config.hosts << "cocktail.sudete.de"
-  config.hosts << "cocktail.proctor-webworks.com"
+  config.hosts << "mr-cocktail.proctor-webworks.com"
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
